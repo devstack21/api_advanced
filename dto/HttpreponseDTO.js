@@ -6,19 +6,13 @@ export default class HttpReponseDTO{
      * @param {Boolean} success
      * @constructor
      */
-    constructor(code=undefined , message , success ,results=[]){
+    constructor(code=undefined , message , success ,err_app=undefined  ,results=[]){
         this.code =  code
         this.message = message
         this.success = success
         this.results = results
-        this.data = JSON.stringify(
-            {
-                code : this.code ,
-                message : this.message , 
-                success: this.success,
-                results : this.results
-            }
-        )
+        this.err_app =  err_app
+
     }
     /**
      * 
@@ -30,6 +24,7 @@ export default class HttpReponseDTO{
                 code : this.code ,
                 message : this.message , 
                 success: this.success,
+                err_app : this.err_app,
                 results : this.results
             }
         )
@@ -43,9 +38,10 @@ export default class HttpReponseDTO{
                 code : this.code,
                 message : this.message , 
                 success: this.success,
+                err_app : this.err_app,
                 results : this.results
             }
         
     }
 
-}
+}//691 79 14 10

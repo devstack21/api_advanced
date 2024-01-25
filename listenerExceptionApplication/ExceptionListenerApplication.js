@@ -1,4 +1,4 @@
-import {handlerExceptionApp} from "../../adviceHandlerApp/HandlerExceptionApplication.js";
+import {handlerExceptionApp} from "../adviceHandlerApp/HandlerExceptionApplication.js";
 
 export default class ExceptionListenerApplication {
     constructor(events) {

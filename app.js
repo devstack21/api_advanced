@@ -1,2 +1,3 @@
-import "./endpoints/api.js";
+
+import "./endpoints/utilisateur.endpoints.js";
 import "./endpoints/api2.js";
